@@ -1,6 +1,6 @@
 {   
     "scripts": {
-    "start": "node bin/main",
+    "start": "node bin/main && node server/server.js",
     "railway": "npm run migration:up && npm start",
     "lint": "eslint --ext mjs,js,ts . --ignore-pattern 'src/http/html'",
     "migration:latest": "knex migrate:latest",
